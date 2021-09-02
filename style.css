@@ -1,0 +1,24 @@
+.content {
+  text-align: center;
+  margin: 30px auto;
+}
+
+#timer {
+  font-size: 36px;
+  border: 1px solid #CCC;
+  margin: 30px auto;
+  padding: 50px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+}
+
+.btn {
+  width: 100%;
+  padding: 20px 0 ;
+  background-color: royalblue;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
