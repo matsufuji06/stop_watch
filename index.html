@@ -22,8 +22,20 @@
     if (seconds < 10) {
       seconds = "0" + seconds
     }
-      
-    document.getElementById("timer").innerHTML = seconds;
+    
+    let minutes = now.getMinutes();
+
+    if (minutes < 10 ) {
+      minutes = "0" + minutes
+    }
+
+    let hours = now.getHours();
+
+    if (hours < 10 ) {
+      hours = "0" + hours
+    }
+
+    document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds;
   </script>
 </body>
 </html>
