@@ -16,24 +16,24 @@
   </div>
   
   <script>
-    let now = new Date();
-    let seconds = now.getSeconds();
+    let addZero = function(value) {
+      if (value < 10) {
+        value = "0" + value
+      }
 
-    if (seconds < 10) {
-      seconds = "0" + seconds
+      return value
     }
+
+    let now = new Date();
+
+    let seconds = now.getSeconds();
+    seconds = addZero(seconds);
     
     let minutes = now.getMinutes();
-
-    if (minutes < 10 ) {
-      minutes = "0" + minutes
-    }
+    minutes = addZero(minutes);
 
     let hours = now.getHours();
-
-    if (hours < 10 ) {
-      hours = "0" + hours
-    }
+    hours = addZero(hours);
 
     document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds;
   </script>
