@@ -24,18 +24,22 @@
       return value
     }
 
-    let now = new Date();
+    document.getElementById("start_stop").addEventListener("click", function() {
+      let now = new Date();
+  
+      let seconds = now.getSeconds();
+      seconds = addZero(seconds);
+      
+      let minutes = now.getMinutes();
+      minutes = addZero(minutes);
+  
+      let hours = now.getHours();
+      hours = addZero(hours);
+  
+      document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds;
 
-    let seconds = now.getSeconds();
-    seconds = addZero(seconds);
-    
-    let minutes = now.getMinutes();
-    minutes = addZero(minutes);
+    });
 
-    let hours = now.getHours();
-    hours = addZero(hours);
-
-    document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds;
   </script>
 </body>
 </html>
