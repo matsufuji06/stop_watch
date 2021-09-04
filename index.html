@@ -16,7 +16,11 @@
   </div>
   
   <script>
-    
+    document.getElementById("start_stop").addEventListener("click", function () {
+      var start = new Date();
+      document.getElementById("timer").innerHTML = start.getTime();
+      
+    });
   </script>
 </body>
 </html>
