@@ -25,6 +25,13 @@
 
     });
 
+    let addZero = function(value) {
+      if (value < 10) {
+        value = "0" + value;
+      }
+      return value;
+    }
+
     let goTimer = function () {
       let now = new Date();
 
@@ -32,6 +39,13 @@
       let seconds = Math.floor(milli / 1000);
       let minutes = Math.floor(seconds / 60);
       let hours = Math.floor(minutes / 60);
+
+      seconds = seconds - minutes * 60;
+      minutes = minutes - hours * 60;
+
+      hours = addZero(hours);
+      minutes = addZero(minutes);
+      seconds = addZero(seconds);
 
       document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds;
     }
