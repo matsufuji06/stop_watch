@@ -23,6 +23,11 @@
 
       setInterval(goTimer, 10);
 
+      // STOPボタンにする
+      this.innerHTML = "STOP";
+      this.classList.remove("btn");
+      this.classList.add("btn-danger");
+
     });
 
     let addZero = function(value) {

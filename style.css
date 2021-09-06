@@ -22,3 +22,13 @@
   font-weight: bold;
   color: #fff;
 }
+
+.btn-danger {
+  width: 100%;
+  padding: 20px 0 ;
+  background-color: orangered;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+
+}
