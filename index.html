@@ -30,8 +30,10 @@
 
       let milli = now.getTime() - start.getTime();
       let seconds = Math.floor(milli / 1000);
+      let minutes = Math.floor(seconds / 60);
+      let hours = Math.floor(minutes / 60);
 
-      document.getElementById("timer").innerHTML = seconds;
+      document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds;
     }
 
   </script>
